@@ -38,7 +38,7 @@ public class LoadActivity extends Activity implements OnClickListener{
 	public void onClick(View v) {
 		switch(v.getId()){
 		case R.id.btn_login:
-			Intent intent = new Intent(LoadActivity.this,LoginActivity.class);
+			Intent intent = new Intent(LoadActivity.this,MainActivity.class);
 		}
 		
 	}
