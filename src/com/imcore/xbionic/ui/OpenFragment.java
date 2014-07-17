@@ -1,7 +1,5 @@
 package com.imcore.xbionic.ui;
 
-import java.util.zip.Inflater;
-
 import com.imcore.xbionic.R;
 
 import android.content.Intent;

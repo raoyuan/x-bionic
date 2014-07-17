@@ -39,7 +39,32 @@ public class OpenActivity extends FragmentActivity{
 		
 		viewpager = (ViewPager)findViewById(R.id.viewpager);
 		viewpager.setAdapter(new ViewpagerAdapter());
-
+		viewpager.setOnPageChangeListener(new OnPageChangeListener() {
+			
+			@Override
+			public void onPageSelected(int position) {
+				for(int i=0;i<list.size();i++){
+					if(i==position){
+						list.get(position).setImageResource(R.drawable.yes);
+					}else{
+						list.get(position).setImageResource(R.drawable.no);
+					}
+				}
+				
+			}
+			
+			@Override
+			public void onPageScrolled(int position, float arg1, int arg2) {
+				// TODO Auto-generated method stub
+				
+			}
+			
+			@Override
+			public void onPageScrollStateChanged(int position) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
 	}
 	private final class ViewpagerAdapter extends FragmentStatePagerAdapter{
 
@@ -63,34 +88,6 @@ public class OpenActivity extends FragmentActivity{
 		public int getCount() {
 			// TODO Auto-generated method stub
 			return list.size();
-		}
-		OnPageChangeListener listener = new OnPageChangeListener(){
-
-			@Override
-			public void onPageScrollStateChanged(int position) {
-				// TODO Auto-generated method stub
-				
-			}
-
-			@Override
-			public void onPageScrolled(int position, float arg1, int arg2) {
-				// TODO Auto-generated method stub
-				
-			}
-
-			@Override
-			public void onPageSelected(int position) {
-				for(int i=0;i<list.size();i++){
-					if(i==position){
-						list.get(position).setImageResource(R.drawable.yes);
-					}else{
-						list.get(position).setImageResource(R.drawable.no);
-					}
-				}
-				
-			}
-			
-		};
-	}
-	
+		}		
+	}	
 }

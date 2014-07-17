@@ -1,5 +1,11 @@
 package com.imcore.xbionic.ui;
 
+import com.imcore.xbionic.ui.OpenActivity;
+import com.imcore.xbionic.ui.LoadActivity;
+import com.imcore.xbionic.ui.LoginActivity;
+import com.imcore.xbionic.ui.QQActivity;
+import com.imcore.xbionic.ui.RegisterActivity;
+import com.imcore.xbionic.ui.SinaActivity;
 import com.imcore.xbionic.R;
 
 import android.app.Activity;
@@ -16,29 +22,40 @@ import android.widget.ImageButton;
 
 public class LoadActivity extends Activity implements OnClickListener{
 	private Button btnsina,btnqq,btnlogin,btnregister;
-	private ImageButton btnhelp,btnserve;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {		
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_load);
-		btnsina = (Button)findViewById(R.id.btn_sina_login);
-		btnqq = (Button) findViewById(R.id.btn_qq_login);
+//		btnsina = (Button)findViewById(R.id.btn_sina_login);
+//		btnqq = (Button) findViewById(R.id.btn_qq_login);
 		btnlogin = (Button) findViewById(R.id.btn_login);
 		btnregister = (Button) findViewById(R.id.btn_register);
-		btnhelp = (ImageButton)findViewById(R.id.img_but_help);
-		btnsina.setOnClickListener(this);
-		btnqq.setOnClickListener(this);
+//		btnsina.setOnClickListener(this);
+//		btnqq.setOnClickListener(this);
 		btnlogin.setOnClickListener(this);
 		btnregister.setOnClickListener(this);
-		btnhelp.setOnClickListener(this);
 	}
 	
 	@Override
 	public void onClick(View v) {
 		switch(v.getId()){
 		case R.id.btn_login:
-			Intent intent = new Intent(LoadActivity.this,MainActivity.class);
+			Intent intent = new Intent(LoadActivity.this,LoginActivity.class);
+			startActivity(intent);
+			break;
+//		case R.id.btn_sina_login:
+//			Intent intent1 = new Intent(LoadActivity.this,SinaActivity.class);
+//			startActivity(intent1);
+//			break;
+//		case R.id.btn_qq_login:
+//			Intent intent2 = new Intent(LoadActivity.this,QQActivity.class);
+//			startActivity(intent2);
+//			break;
+		case R.id.btn_register:
+			Intent intent3 = new Intent(LoadActivity.this,RegisterActivity.class);
+			startActivity(intent3);
+			break;
 		}
 		
 	}

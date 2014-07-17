@@ -7,7 +7,7 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="18" />
-	<uses-permission android:name="android.permission.INTERNE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />T
     <application
@@ -40,8 +40,42 @@
             android:name="com.imcore.xbionic.ui.LoginActivity"
             android:label="@string/app_name" >
         </activity>
-
-        
+		<activity
+            android:name="com.imcore.xbionic.ui.SharesetActivity"
+            android:label="@string/app_name" >
+        </activity>		
+        <activity
+            android:name="com.imcore.xbionic.ui.ForgetpwdActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.imcore.xbionic.ui.RegisterActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.imcore.xbionic.ui.SettingActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.imcore.xbionic.ui.MasterActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.imcore.xbionic.ui.CollectionActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.imcore.xbionic.ui.SetActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.imcore.xbionic.ui.StoryActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.imcore.xbionic.ui.IntroduceActivity"
+            android:label="@string/app_name" >
+        </activity>
     </application>
 
 </manifest>

@@ -7,4 +7,7 @@
 	<string name="user_name">用户名</string>
 	<string name="password">密码</string>
 	<string name="logo">X-Bionic</string>
+	<string name="drawer_open">drawer_open</string>
+    <string name="drawer_close">drawer_close</string>
+    <string name="text_for_shop">测试用户体验累计消费换购奥巴马代言手提包</string>
 </resources>
