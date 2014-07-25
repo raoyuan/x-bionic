@@ -24,9 +24,9 @@ public class OpenActivity extends FragmentActivity{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_open);
 		
-		SharedPreferences sp = getSharedPreferences("login", 0);
-		SharedPreferences.Editor editor= sp.edit();
-		editor.putString("name", "value");
+		SharedPreferences inP = getSharedPreferences("hadlogin", 0);
+		SharedPreferences.Editor editor = inP.edit();
+		editor.putString("ind", "value");
 		editor.commit();
 		
 		list = new ArrayList<ImageView>();

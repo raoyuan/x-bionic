@@ -40,6 +40,11 @@ public class MainActivity extends Activity implements OnClickListener, OnItemCli
 		btnproduct = (Button) findViewById(R.id.btn_product);
 		btnstory = (Button) findViewById(R.id.btn_story);
 		btnintroduce = (Button) findViewById(R.id.btn_introduce);
+		btnsearch.setOnClickListener(this);
+		btnproduct.setOnClickListener(this);
+		btnstory.setOnClickListener(this);
+		btnintroduce.setOnClickListener(this);
+		
 		btnaccount = (Button) findViewById(R.id.btn_drawer);
 		btnaccount.setOnClickListener(new OnClickListener() {
 
@@ -172,26 +177,26 @@ public class MainActivity extends Activity implements OnClickListener, OnItemCli
 	public void onClick(View v) {
 		Intent intent = null;
 		switch(v.getId()){
-//		case R.id.btn_product:
-//			intent = new Intent(this,ProductActivity.class);
-//			startActivity(intent);
-//			break;
+		case R.id.btn_product:
+			intent = new Intent(this,ProductActivity.class);
+			startActivity(intent);
+			break;
 		case R.id.btn_story:
 			intent = new Intent(this,StoryActivity.class);
 			startActivity(intent);
 			break;
-//		case R.id.btn_activity:
-//			intent = new Intent(this,XActivity.class);
-//			startActivity(intent);
-//			break;
+		case R.id.btn_activity:
+			intent = new Intent(this,XActivity.class);
+			startActivity(intent);
+			break;
 		case R.id.btn_introduce:
 			intent = new Intent(this,IntroduceActivity.class);
 			startActivity(intent);
 			break;
-//		case R.id.btn_main_search:
-//			intent = new Intent(this,SearchActivity.class);
-//			startActivity(intent);
-//			break;
+		case R.id.btn_main_search:
+			intent = new Intent(this,SearchActivity.class);
+			startActivity(intent);
+			break;
 		}
 	}
 

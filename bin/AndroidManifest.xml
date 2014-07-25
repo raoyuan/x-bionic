@@ -76,6 +76,10 @@
             android:name="com.imcore.xbionic.ui.IntroduceActivity"
             android:label="@string/app_name" >
         </activity>
+        <activity
+            android:name="com.imcore.xbionic.ui.ProductActivity"
+            android:label="@string/app_name" >
+        </activity>
     </application>
 
 </manifest>
